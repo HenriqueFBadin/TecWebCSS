@@ -34,11 +34,15 @@ body {
   display: block;
   padding: 10px 15px;
 
-  overflow: hidden;
+  overflow: visible;
+
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #2c2c2c;
 
   border-width: 0;
   outline: none;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   background-color: #f7d736;
@@ -104,48 +108,78 @@ body {
 .form-card {
   display: flex;
   flex-direction: column;
-  margin: 3% auto;
+  margin: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 7%;
-  max-width: fit-content;
-  min-width: 20rem;
+  border-radius: 5%;
+  max-width: 33rem;
+  width: 40%;
   padding: 1rem;
 }
 
-.card{
-  display: flex;
-  flex-direction:column;
-  justify-content: space-around;
-  margin: 0.3%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 7%;
-  max-height: 30rem;
-  min-width: 10rem;
-  min-height: 8rem;
-  max-width: 10rem;
-}
-.card-content{
+.container{
   display: flex;
   flex-direction: column;
-  align-self: center;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 3%;
-  justify-content: space-around;
-  
+  align-items: center
 }
-.card-title{
-  padding-left:0.5rem;
-  font-family: 'Permanent Marker', cursive;
-  
-}
-.card-container{
+
+.card-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction:row;
-  min-width: 0.1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 90%;
+    flex-wrap: wrap;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 21%;
+  height: 8rem;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: space-between;
+}
+
+.card-title {
+  display: flex;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.card-content {
+  display: flex;
+  font-size: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #4c4c4c;
+  font-family: 'Permanent Marker', cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form-card-title {
+  display: flex;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #2c2c2c;
+  outline: none;
+  border: 0px;
+}
+
+.autoresize {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  color: #2c2c2c;
+  outline: none;
+  border: 0px;
+}
+
 .card-color-1{
   background-color:#ead3a7;
 }
@@ -201,21 +235,4 @@ body {
 }
 .card-rotation-11{
   transform: rotate(-3.5deg);
-}
-.autoresize{
-  display: flex;
-  margin-top: 0%;
-  border: 0px;
-  font-family: 'Roboto', sans-serif;
-  outline: none;
-  
-}
-.form-card-title{
-  margin: 0%;
-  border: 0px;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  font-weight: bold;
-  color:#2c2c2c;
-  outline:none;
 }
