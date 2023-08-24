@@ -75,7 +75,9 @@ body {
 .btn:active:before {
   width: 120%;
   padding-top: 120%;
-
+  outline: None;
+  display: flex;
+  justify-content: center;
   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
 }
 
@@ -102,9 +104,118 @@ body {
 .form-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 3% 0 0 0;
+  margin: 3% auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 7%;
   max-width: fit-content;
+  min-width: 20rem;
+  padding: 1rem;
+}
+
+.card{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  margin: 0.3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7%;
+  max-height: 30rem;
+  min-width: 10rem;
+  min-height: 8rem;
+  max-width: 10rem;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  justify-content: space-around;
+  
+}
+.card-title{
+  padding-left:0.5rem;
+  font-family: 'Permanent Marker', cursive;
+  
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction:row;
+  min-width: 0.1rem;
+}
+.card-color-1{
+  background-color:#ead3a7;
+}
+.card-color-2{
+  background-color: #9de0f5;
+}
+.card-color-3{
+  background-color: #ef89ba;
+}
+.card-color-4{
+  background-color: #fae890;
+}
+.card-color-5{
+  background-color: #abe9c1;
+}
+.card-rotation-1{
+  transform: rotate(2deg);
+}
+.card-rotation-2{
+  transform: rotate(-2deg);
+}
+
+.card-rotation-3{
+  transform: rotate(-3deg);
+}
+
+.card-rotation-4{
+  transform: rotate(4deg);
+}
+
+.card-rotation-5{
+  transform: rotate(-4deg);
+}
+
+.card-rotation-6{
+  transform: rotate(1deg);
+}
+
+.card-rotation-7{
+  transform: rotate(-1deg);
+}
+
+.card-rotation-8{
+  transform: rotate(2.5deg);
+}
+
+.card-rotation-9{
+  transform: rotate(-2.5deg);
+}
+
+.card-rotation-10{
+  transform: rotate(3.5deg);
+}
+.card-rotation-11{
+  transform: rotate(-3.5deg);
+}
+.autoresize{
+  display: flex;
+  margin-top: 0%;
+  border: 0px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  
+}
+.form-card-title{
+  margin: 0%;
+  border: 0px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  font-weight: bold;
+  color:#2c2c2c;
+  outline:none;
 }
