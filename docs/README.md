@@ -12,3 +12,7 @@ Henrique Badin,
 
 
 Henrique Bomfim
+
+
+Link para o Pages:
+https://henriquefbadin.github.io/TecWebCSS/
